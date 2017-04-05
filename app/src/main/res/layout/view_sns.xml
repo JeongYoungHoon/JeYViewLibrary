@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tview="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:padding="10dip">
+
+    <com.jey_dev.lib.view.JFloatingActionButton
+        android:id="@+id/sns_facebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:src="@drawable/ic_sns_fb"
+        tview:scaleType="normal"
+        tview:tintColor="#FF2d4485"/>
+    <com.jey_dev.lib.view.JFloatingActionButton
+        android:id="@+id/sns_kakao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:src="@drawable/ic_sns_kakao"
+        tview:scaleType="normal"
+        tview:tintColor="#FFffeb00"/>
+    <com.jey_dev.lib.view.JFloatingActionButton
+        android:id="@+id/sns_web"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:src="@drawable/ic_sns_public"
+        tview:scaleType="normal"
+        tview:tintColor="#ff006934"/>
+    <com.jey_dev.lib.view.JFloatingActionButton
+        android:id="@+id/sns_market"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:src="@drawable/ic_sns_jey"
+        tview:scaleType="normal"
+        tview:tintColor="#FF006934"/>
+
+</LinearLayout>
