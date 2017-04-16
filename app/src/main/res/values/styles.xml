@@ -7,5 +7,12 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+    <style name="notice_loading">
+        <item name="android:indeterminateDrawable">@drawable/jey_progress_ani</item>
+        <item name="android:indeterminateBehavior">repeat</item>
+        <item name="android:indeterminateDuration">400</item>
+        <item name="android:width">80dip</item>
+        <item name="android:height">80dip</item>
+    </style>
 
 </resources>

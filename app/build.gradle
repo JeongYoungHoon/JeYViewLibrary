@@ -1,13 +1,17 @@
 apply plugin: 'com.android.library'
 apply plugin: 'com.novoda.bintray-release'
 
+/*
+./gradlew clean build bintrayUpload -PbintrayUser=jeyechoo -PbintrayKey=7b5360461ef7851132f69e9875599942d6f529ff -PdryRun=false
+*/
+
 publish {
     userOrg = 'jeyechoo'
     groupId = 'com.jey_dev'
     artifactId = 'JeYViewLibrary'
-    publishVersion = '1.0.0'
+    publishVersion = '1.1.2'
     desc = ''
-    website = 'https://github.com/JeongYoungHoon/JeYViewLibrary'
+    website = "https://github.com/JeongYoungHoon/${artifactId}"
     issueTracker = "${website}/issues"
     repository = "${website}.git"
 }

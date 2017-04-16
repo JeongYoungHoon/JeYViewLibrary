@@ -99,7 +99,7 @@ public class JeYSnsView extends LinearLayout {
         marketView.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/dev?id=5954317455002110606")));
+                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://jey-dev.com/jey/store.php")));
             }
         });
         setButtonSize();

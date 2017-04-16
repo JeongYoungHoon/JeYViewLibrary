@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10dip"
-        android:src="@drawable/ic_sns_fb"
+        android:src="@drawable/ic_jey_sns_fb"
         tview:scaleType="normal"
         tview:tintColor="#FF2d4485"/>
     <com.jey_dev.lib.view.JFloatingActionButton
@@ -20,7 +20,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10dip"
-        android:src="@drawable/ic_sns_kakao"
+        android:src="@drawable/ic_jey_sns_kakao"
         tview:scaleType="normal"
         tview:tintColor="#FFffeb00"/>
     <com.jey_dev.lib.view.JFloatingActionButton
@@ -28,7 +28,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10dip"
-        android:src="@drawable/ic_sns_public"
+        android:src="@drawable/ic_jey_sns_public"
         tview:scaleType="normal"
         tview:tintColor="#ff006934"/>
     <com.jey_dev.lib.view.JFloatingActionButton
@@ -36,7 +36,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="10dip"
-        android:src="@drawable/ic_sns_jey"
+        android:src="@drawable/ic_jey_sns_jey"
         tview:scaleType="normal"
         tview:tintColor="#FF006934"/>
 
