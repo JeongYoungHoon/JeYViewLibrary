@@ -5,10 +5,17 @@
         <enum name="mini" value="1"/>
         <enum name="big" value="2"/>
     </attr>
+    <attr name="tintColor" format="reference|color" />
     <declare-styleable name="JFloatingActionButton">
-        <attr name="tintColor" format="reference|color" />
+        <attr name="tintColor"/>
         <attr name="scaleType"/>
         <attr name="imgPadding" format="reference|dimension"/>
+        <!--<attr name="text" format="reference|string" />-->
+        <!--<attr name="textColor" format="reference|integer" />-->
+    </declare-styleable>
+    <declare-styleable name="JeYSnsView">
+        <attr name="scaleType"/>
+        <!--<attr name="tintColor"/>-->
         <!--<attr name="text" format="reference|string" />-->
         <!--<attr name="textColor" format="reference|integer" />-->
     </declare-styleable>

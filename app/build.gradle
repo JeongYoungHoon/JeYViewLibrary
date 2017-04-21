@@ -9,7 +9,7 @@ publish {
     userOrg = 'jeyechoo'
     groupId = 'com.jey_dev'
     artifactId = 'JeYViewLibrary'
-    publishVersion = '1.1.2'
+    publishVersion = '1.2.1'
     desc = ''
     website = "https://github.com/JeongYoungHoon/${artifactId}"
     issueTracker = "${website}/issues"

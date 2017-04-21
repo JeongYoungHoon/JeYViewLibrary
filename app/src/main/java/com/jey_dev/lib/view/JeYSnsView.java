@@ -3,6 +3,7 @@ package com.jey_dev.lib.view;
 import android.annotation.TargetApi;
 import android.content.Context;
 import android.content.Intent;
+import android.content.res.TypedArray;
 import android.net.Uri;
 import android.os.Build;
 import android.util.AttributeSet;
@@ -10,7 +11,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.LinearLayout;
 
-//import com.wenoun.library.image.ImageUtils;
 
 /**
  * Created by JeyHoon on 16. 6. 1..
@@ -32,18 +32,21 @@ public class JeYSnsView extends LinearLayout {
 
     public JeYSnsView(Context context, AttributeSet attrs) {
         super(context, attrs);
+        getAttrs(attrs);
         initView();
     }
 
     @TargetApi(Build.VERSION_CODES.HONEYCOMB)
     public JeYSnsView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
+        getAttrs(attrs,defStyleAttr);
         initView();
     }
 
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     public JeYSnsView(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
         super(context, attrs, defStyleAttr, defStyleRes);
+        getAttrs(attrs,defStyleAttr,defStyleRes);
         initView();
     }
     private void initView(){
@@ -142,5 +145,29 @@ public class JeYSnsView extends LinearLayout {
     }
     private void startActivity(Intent intent){
         getContext().startActivity(intent);
+    }
+    private void getAttrs(AttributeSet attrs) {
+        TypedArray typedArray = getContext().obtainStyledAttributes(attrs, R.styleable.JeYSnsView);
+
+        setTypeArray(typedArray);
+    }
+
+
+    private void getAttrs(AttributeSet attrs, int defStyle) {
+        TypedArray typedArray = getContext().obtainStyledAttributes(attrs, R.styleable.JeYSnsView, defStyle, 0);
+        setTypeArray(typedArray);
+
+    }
+    private void getAttrs(AttributeSet attrs, int defStyle, int defStyleRes) {
+        TypedArray typedArray = getContext().obtainStyledAttributes(attrs, R.styleable.JeYSnsView, defStyle, defStyleRes);
+        setTypeArray(typedArray);
+
+    }
+
+
+    private void setTypeArray(TypedArray typedArray) {
+        scaleType = typedArray.getInt(R.styleable.JeYSnsView_scaleType, SCALE_NORMAL);
+        typedArray.recycle();
+
     }
 }
